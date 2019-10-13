@@ -1,3 +1,5 @@
+#Create CSV with market Coordinates
+
 library(stringi)
 library(stringdist)
 library(raster)

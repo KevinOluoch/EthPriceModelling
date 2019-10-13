@@ -1,4 +1,4 @@
-# Extract Maize prices
+# Extract Maize prices from CSvs with ETH commodity prices
 
 #### Libraries ####
 library(stringdist)
@@ -6,7 +6,7 @@ library(stringdist)
 
 
 #### INput Data ####
-data.dir.path <- "data/ETHPriceData"
+data.dir.path <- "../ScrapDoc/output"    # "data/ETHPriceData"
 output.dir.path <- "output/ETHPriceData"     
 coords.file.path <-  "data/ETH_Region_Market_Coords.csv"
 
@@ -62,12 +62,30 @@ maize.info.all <- data.frame()
 output.csv <- ""
 for (price.csv.path in price.csvS.path) {
   region.names <- read.csv(price.csv.path, as.is = TRUE, header = FALSE)[1:2,]
-  price.csv <- read.csv(price.csv.path, as.is = TRUE, skip = 1)
+  columns.error <- try(read.csv(price.csv.path, as.is = TRUE, skip = 1, ))
+  if (class(columns.error) == "try-error"){
+  price.csv1 <- read.csv(price.csv.path, as.is = TRUE, skip = 2, header = FALSE )
+  markts.available1 <- replace(region.names[2,], region.names[2,]=="", NA)
+  markts.available <- markts.available1[!is.na(markts.available1)]
+  price.csv <- price.csv1[,1:length(markts.available)]
+  names(price.csv) <- markts.available
+  
+  # Get rows with maize
+  maize.rows <- grepl("maize", price.csv$ITEM, ignore.case = TRUE)
+  maize.data <- data.frame(t(region.names[,1:length(markts.available)]), 
+                           t(price.csv[maize.rows, ])
+  )
+  }
+  if (class(columns.error) != "try-error"){
+    price.csv <- read.csv(price.csv.path, as.is = TRUE, skip = 1, )
+  
   head(price.csv)
+  # Get rows with maize
   maize.rows <- grepl("maize", price.csv$ITEM, ignore.case = TRUE)
   maize.data <- data.frame(t(region.names), 
                            t(price.csv[maize.rows, ])
                            )
+  }
 
   
   
