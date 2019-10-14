@@ -5,7 +5,13 @@ library(rgdal)
 library(randomForest)
 
 #### Create Maize Prices data ####
-maize.price.all <- read.csv("output/ETHPriceData/4.Retail Price 2006 E.C.csv", as.is = TRUE)
+output.dir.raster <- "output/priceRasters"
+files.csv <- list.files("output/ETHPriceData/", full.names = TRUE)
+
+for (file.csv in files.csv) {
+  
+
+maize.price.all <- read.csv(file.csv, as.is = TRUE)
 maize.price.column <- "Unmilled.Maize.Price.Birr.KG" # "Milled.Maize.Price.Birr.KG"
 Longitude.column <- "Longitude"
 Latitude.column <- "Latitude"
@@ -203,3 +209,9 @@ lm_line <-
                       non.spatial.prediction)
   )
 abline(lm_line)
+dir.create(file.path(output.dir.raster))
+outpath1 <- gsub("[[:space:]]", "", basename(file.csv))
+outpath <- gsub("[.]", "", basename(outpath1))
+writeRaster(spatial.prediction, paste0(file.path(output.dir.raster,outpath), ".tif"))
+
+}
