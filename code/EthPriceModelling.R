@@ -4,9 +4,14 @@ library(raster) # Will load "sp" package as a dependency
 library(rgdal)
 library(randomForest)
 
+# ETH Cities and Towns
+eth.places <- raster::shapefile("data/places/places.shp")
+
 #### Create Maize Prices data ####
 output.dir.raster <- "output/priceRasters"
 files.csv <- list.files("output/ETHPriceData/", full.names = TRUE)
+
+
 
 for (file.csv in files.csv) {
   
@@ -215,3 +220,19 @@ outpath <- gsub("[.]", "", basename(outpath1))
 writeRaster(spatial.prediction, paste0(file.path(output.dir.raster,outpath), ".tif"))
 
 }
+
+# 3. Extract Price data in Ethiopia Cities/Towns
+eth_places <- raster::extract( spatial.prediction, eth.places, 
+                                 method = 'bilinear', buffer = 5000, 
+                                 fun = median, sp=TRUE, 
+                                 na.rm=TRUE
+)
+
+for (place in unique(eth_places$type)) {
+  print(paste0(place, " : ", length(eth_places$type[eth_places$type == place])))
+}
+
+eth.citytown <- eth_places[eth_places$type == "city" | eth_places$type == "town",]
+
+
+
