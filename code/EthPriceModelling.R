@@ -6,6 +6,8 @@ library(randomForest)
 
 # ETH Cities and Towns
 eth.places <- raster::shapefile("data/places/places.shp")
+# Population data
+Ethpop15 <- raster("data/Ethiopia_100m_Population/ETH15adjv5.tif")
 
 #### Create Maize Prices data ####
 output.dir.raster <- "output/priceRasters"
@@ -228,7 +230,15 @@ eth_places <- raster::extract( spatial.prediction, eth.places,
                                  na.rm=TRUE
 )
 
-for (place in unique(eth_places$type)) {
+# 4. Extract Population data in Ethiopia Cities/Towns 
+eth_places <- raster::extract( Ethpop15, eth.places, 
+                               method = 'bilinear', buffer = 5000, 
+                               fun = sum, sp=TRUE, 
+                               na.rm=TRUE
+)
+
++
+  for (place in unique(eth_places$type)) {
   print(paste0(place, " : ", length(eth_places$type[eth_places$type == place])))
 }
 
