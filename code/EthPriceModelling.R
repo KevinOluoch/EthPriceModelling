@@ -237,12 +237,13 @@ eth_places <- raster::extract( Ethpop15, eth.places,
                                na.rm=TRUE
 )
 
-+
+# Select Cities and towns from places shapefile
   for (place in unique(eth_places$type)) {
   print(paste0(place, " : ", length(eth_places$type[eth_places$type == place])))
 }
 
-eth.citytown <- eth_places[eth_places$type == "city" | eth_places$type == "town",]
+eth.citytown <- ethplaces[ethplaces$type == "city" | ethplaces$type == "town",]
 
-
+dir.create("scratch", showWarnings = FALSE)
+shapefile(eth.citytown, "scratch/EthCityTown.shp")
 
