@@ -1,107 +1,110 @@
-,Region,Market1,Market2,Market3,Market4,Longitude,Latitude
-1,TIGRAY,Enda- silase ,,Enda- silase ,Inda Silase,38.27211005,14.08944251
-2,TIGRAY,Enda- baguna ,,Enda- baguna ,Inda Baguna,38.19317204,13.97860867
-3,TIGRAY,Adwa,,Adwa,Adwa,38.88818805,14.14845458
-4,TIGRAY,Axum,,Axum,Axum,38.71879888,14.11130791
-5,TIGRAY,Adigrat,,Adigrat,Adigrat,39.46033457,14.26667752
-6,TIGRAY,Wukiro,,Wukiro,,39.599747,13.796083
-7,TIGRAY,Mai- chew ,,Mai- chew ,Maychew,39.541533,12.78792086
-8,TIGRAY,Mekelle,,Mekelle,Mekele,39.47221911,13.48719005
-9,AFAR,Ayisaeta,,Ayisaeta,Aysaita,41.43333,11.56667
-10,AFAR,Dubti,,Dubti,Dubti,41.08260323,11.72765333
-11,AFAR,Melka Werers ,,Melka Werers ,Melka Werer,40.18154914,9.340880502
-12,AFAR,Sebat killo ,,Sebat killo ,,8.983333333,40.16666667
-13,AMHARA,Chuahit,,Chuahit,,39.311961,10.643157
-14,AMHARA,Gondar,,Gondar,Gonder,37.46149667,12.59878688
-15,AMHARA,Esete,,Esete,Sede,37.88657423,10.92298692
-16,AMHARA,Debre- Tabor ,,Debre- Tabor ,Debre Tabor,38.00833967,11.84769551
-17,AMHARA,Kobo,,Kobo,Kobo,39.63127424,12.16406542
-18,AMHARA,Weldiya,,Weldiya,Weldiya,39.6014117,11.82360232
-19,AMHARA,Kombolcha,,Kombolcha,Kombolcha,39.73724188,11.07807805
-20,AMHARA,Dessie,,Dessie,Dese,39.63548793,11.11703902
-21,AMHARA,Shewa- Robit ,,Shewa- Robit ,Shewa Robit,39.90269733,10.00580856
-22,AMHARA,Debre-¦,,Debre- Birhan,Debre Birhan,39.52890047,9.67650294
-23,AMHARA,Mota,,Mota,Mota,37.8807432,11.07475582
-24,AMHARA,Debre- markos ,,Debre- markos ,Debre Markos,37.72636868,10.33641293
-25,AMHARA,Dembecha,,Dembecha,Dembecha,37.48251554,10.56669266
-26,AMHARA,Bahir- Dar ,,Bahir- Dar ,Bahr Dar,37.3815488,11.58416449
-27,AMHARA,Sekota,,Sekota,Sekota,39.03355257,12.62479803
-28,AMHARA,Amde Work ,,Amde Work ,Amde Werk,38.85815043,12.45920199
-29,AMHARA,Danigla,,Danigla,Dangla,36.83153176,11.25223153
-30,AMHARA,Chagni,,Chagni,Chagni,36.50793596,10.95196565
-31,AMHARA,Kemise,,Kemise,Kemise,39.85696873,10.71374234
-32,AMHARA,Bati,,Bati,Bati,40.0181327,11.19153266
-33,OROMIYA,Ghimbi,,Ghimbi,Gimbi,35.83291974,9.163103789
-34,OROMIYA,Dembi- dolo ,,Dembi- dolo ,Dembidolo,34.79748694,8.530219501
-35,OROMIYA,Shambu,,Shambu,Shambu,37.09431432,9.569809208
-36,OROMIYA,Nekemte,,Nekemte,Nekemte,36.54851971,9.09042469
-37,OROMIYA,Bedele,,Bedele,Bedele,36.36017384,8.454821965
-38,OROMIYA,Metu,,Metu,Metu,35.58726864,8.300606827
-39,OROMIYA,Jimma,,Jimma,Jimma,36.84385226,7.672338798
-40,OROMIYA,Agaro,,Agaro,Agaro,36.58627683,7.848002731
-41,OROMIYA,Ambo,,Ambo,Ambo,37.8446066,8.976806527
-42,OROMIYA,Weliso,,Weliso,Weliso,37.97073066,8.534178897
-43,OROMIYA,Ejere,,Ejere,,39.262249,8.78288
-44,OROMIYA,Fiche,,Fiche,Fiche,38.73344116,9.791083661
-45,OROMIYA,Nazareth,Adama,Nazareth,Nazret,39.26941988,8.535362997
-46,OROMIYA,Shashe-,Shashe- mene ,Shashe- mene,,38.608142,7.205388
-47,OROMIYA,Diksise,,Diksise,,39.55824,8.059179
-48,OROMIYA,Asella,,Asella,Asela,39.12972322,7.949589951
-49,OROMIYA,Asebe- Teferi ,,Asebe- Teferi ,Asbe Teferi,40.86319806,9.072493603
-50,OROMIYA,Bedessa,,Bedessa,Bedesa,40.77378712,8.902011546
-51,OROMIYA,Alemaya,Haromaya,Alemaya,Alem Maya,42.01641123,9.379383214
-52,OROMIYA,Boreda,,Boreda,,41.278686,9.331067
-53,OROMIYA,Adaba,,Adaba,Adaba,39.3890878,7.004454253
-54,OROMIYA,Robe,,Robe,,39.631104,7.860619
-55,OROMIYA,Hagere- Mariam ,,Hagere- Mariam ,Agere Mariyam,38.23373735,5.63380625
-56,OROMIYA,Negele- Borena ,,Negele- Borena ,,39.577385,5.33699
-57,SOMALIE,Shinile,,Shinile,,41.844013,9.686515
-58,SOMALIE,Arere,,Arere,,,
-59,SOMALIE,Jigjiga,,Jigjiga,,42.792342,9.367259
-60,SOMALIE,Hartshek,,Hartshek,,43.356499,9.161111
-61,SOMALIE,Dolo,,Dolo,,42.059257,4.179211
-62,SOMALIE,Moyale,,Moyale,,3.527,39.056
-63,BENISHANGUL - GUMUZ,,,Mambook ,,,
-64,BENISHANGUL - GUMUZ,,,Mender-  Sebat,,,
-65,BENISHANGUL - GUMUZ,,Asossa,Asossa  ,Asosa,34.53730603,10.05784932
-66,BENISHANGUL - GUMUZ,,Bambasi,Bambasi ,Bambesi,34.73046863,9.751504664
-67,BENISHANGUL - GUMUZ,,Kemashi,Kemashi  ,Kamashi,35.85916991,9.515450626
-68,BENISHANGUL - GUMUZ,,Agelo- meti ,Agelo- meti,Agalometi,35.77048443,9.640776618
-69,SNNP,Welikite,,Welikite,Welkite,37.77266735,8.27732366
-70,SNNP,Butajira,,Butajira,Butajira,38.42140499,8.173264069
-71,SNNP,Hosahna,,Hosahna,Hosaina,37.84747123,7.538579317
-72,SNNP,Shone,,Shone,Shone,37.94869425,7.134857075
-73,SNNP,Doyugena,,Doyugena,Doya Gena,37.78333,7.33333
-74,SNNP,Alaba,,Alaba,Halaba,38.086143,7.311546
-75,SNNP,Awasa,,Awasa,Hawassa,38.474819,7.058624
-76,SNNP,Hagere- Selam ,,Hagere- Selam ,Hagere Selam,38.51921184,6.513880636
-77,SNNP,Dilla,,Dilla,Dila,38.30745962,6.410516676
-78,SNNP,Yirega-¦ chefie ,,Yirega-chefie ,Yirga Chefe,38.1988827,6.16095383
-79,SNNP,Welayita sodo ,,Welayita sodo ,,37.766643,6.86176
-80,SNNP,Bodite,,Bodite,Boditi,37.89064905,7.038034865
-81,SNNP,Jinka,,Jinka,Jinka,36.56441614,5.78310286
-82,SNNP,Dimeka,,Dimeka,Dimeka,36.45041198,4.892522922
-83,SNNP,Masha,,Masha,Masha,35.47956686,7.741652627
-84,SNNP,Tepi,,Tepi,Tepi,35.36770327,7.320015599
-85,SNNP,Boniga,,Boniga,Bonga,36.24008346,7.388535704
-86,SNNP,Chana,,Chana,Hana,36.11775846,6.226550231
-87,SNNP,Arbam- minch ,,Arbam- minch ,Arba Minch,37.5527474,6.024547891
-88,SNNP,Sawla,,Sawla,Sawla,36.87437474,6.300226567
-89,SNNP,Shewa- Bench ,,Shewa- Bench ,,,
-90,SNNP,Mizan- Teferi ,,Mizan- Teferi ,Mizan Teferi,35.41120174,6.883477024
-91,SNNP,Deri,,Deri,Deri,36.28577951,7.384839762
-92,SNNP,Amaro Kele ,,Amaro Kele ,,6.083333333,38.03333333
-93,SNNP,Soyama,,Soyama,,5.7,37.88333333
-94,SNNP,Karate,,Karate,,5.25,37.48333333
-95,SNNP,Gidola,,Gidola,Gidole,37.34772952,5.647078098
-96,SNNP,Tercha,,Tercha,,37.175334,7.146295
-97,SNNP,Besite- chere ,,Besite- chere ,,,
-98,SNNP,Lasoka,,Lasoka,Laska,36.60777815,6.30774507
-99,SNNP,Amaya,,Amaya,Ameya,36.68000727,7.105541206
-100,ADDIS ABABA,Addis Ababa,,Addis Ababa,,38.793806,9.023748
-112,GAMBELLA,Gambella,,Gambella,Gambela,34.58547076,8.249396585
-113,GAMBELLA,Shebo- kire ,,Shebo- kire ,,,
-114,GAMBELLA,Meti,,Meti,,7.233333333,35.31666667
-115,HARARI,Harari Town,,Harari Town,,42.132193,9.309582
-116,DIREDAWA,Dire Dawa ,,Dire Dawa ,Dire Dawa,41.8572763,9.593652332
-117,DIREDAWA,Melka- Jebdu ,,Melka- Jebdu ,Melka Jeldu,41.77420401,9.617496554
+,Region,Market1,Market2,Market3,Market4,Longitude,Latitude,
+1,TIGRAY,Enda- silase ,,Enda- silase ,Inda Silase,38.27211005,14.08944251,
+2,TIGRAY,Enda- baguna ,,Enda- baguna ,Inda Baguna,38.19317204,13.97860867,
+3,TIGRAY,Adwa,,Adwa,Adwa,38.88818805,14.14845458,
+4,TIGRAY,Axum,,Axum,Axum,38.71879888,14.11130791,
+5,TIGRAY,Adigrat,,Adigrat,Adigrat,39.46033457,14.26667752,
+6,TIGRAY,Wukiro,,Wukiro,,39.599747,13.796083,
+7,TIGRAY,Mai- chew ,,Mai- chew ,Maychew,39.541533,12.78792086,
+8,TIGRAY,Mekelle,,Mekelle,Mekele,39.47221911,13.48719005,
+9,AFAR,Ayisaeta,Asayieta,Ayisaeta,Aysaita,41.43333,11.56667,
+10,AFAR,Dubti,,Dubti,Dubti,41.08260323,11.72765333,
+11,AFAR,Melka Werers ,,Melka Werers ,Melka Werer,40.18154914,9.340880502,
+12,AFAR,Semera Logia,,Semera Logia,Semera Logia,41.007285,11.78618,
+13,AFAR,Sebat killo ,,Sebat killo ,,40.16666667,8.983333333,
+14,AMHARA,Chuahit,,Chuahit,,39.311961,10.643157,
+15,AMHARA,Gondar,,Gondar,Gonder,37.46149667,12.59878688,
+16,AMHARA,Esete,,Esete,Sede,37.88657423,10.92298692,
+17,AMHARA,Debre- Tabor ,,Debre- Tabor ,Debre Tabor,38.00833967,11.84769551,
+18,AMHARA,Kobo,,Kobo,Kobo,39.63127424,12.16406542,
+19,AMHARA,Weldiya,,Weldiya,Weldiya,39.6014117,11.82360232,
+20,AMHARA,Kombolcha,,Kombolcha,Kombolcha,39.73724188,11.07807805,
+21,AMHARA,Dessie,,Dessie,Dese,39.63548793,11.11703902,
+22,AMHARA,Shewa- Robit ,,Shewa- Robit ,Shewa Robit,39.90269733,10.00580856,
+23,AMHARA,Debre-¦,,Debre- Birhan,Debre Birhan,39.52890047,9.67650294,
+24,AMHARA,Mota,,Mota,Mota,37.8807432,11.07475582,
+25,AMHARA,Debre- markos ,,Debre- markos ,Debre Markos,37.72636868,10.33641293,
+26,AMHARA,Dembecha,,Dembecha,Dembecha,37.48251554,10.56669266,
+27,AMHARA,Bahir- Dar ,,Bahir- Dar ,Bahr Dar,37.3815488,11.58416449,
+28,AMHARA,Sekota,,Sekota,Sekota,39.03355257,12.62479803,
+29,AMHARA,Amde Work ,,Amde Work ,Amde Werk,38.85815043,12.45920199,
+30,AMHARA,Danigla,,Danigla,Dangla,36.83153176,11.25223153,
+31,AMHARA,Chagni,,Chagni,Chagni,36.50793596,10.95196565,
+32,AMHARA,Kemise,,Kemise,Kemise,39.85696873,10.71374234,
+33,AMHARA,Bati,,Bati,Bati,40.0181327,11.19153266,
+34,OROMIYA,Ghimbi,,Ghimbi,Gimbi,35.83291974,9.163103789,
+35,OROMIYA,Dembi- dolo ,,Dembi- dolo ,Dembidolo,34.79748694,8.530219501,
+36,OROMIYA,Shambu,,Shambu,Shambu,37.09431432,9.569809208,
+37,OROMIYA,Nekemte,,Nekemte,Nekemte,36.54851971,9.09042469,
+38,OROMIYA,Bedele,,Bedele,Bedele,36.36017384,8.454821965,
+39,OROMIYA,Metu,,Metu,Metu,35.58726864,8.300606827,
+40,OROMIYA,Jimma,,Jimma,Jimma,36.84385226,7.672338798,
+41,OROMIYA,Agaro,,Agaro,Agaro,36.58627683,7.848002731,
+42,OROMIYA,Ambo,,Ambo,Ambo,37.8446066,8.976806527,
+43,OROMIYA,Weliso,,Weliso,Weliso,37.97073066,8.534178897,
+44,OROMIYA,Ejere,,Ejere,,39.262249,8.78288,
+45,OROMIYA,Fiche,,Fiche,Fiche,38.73344116,9.791083661,
+46,OROMIYA,Nazareth,Adama,Nazareth,Nazret,39.26941988,8.535362997,
+47,OROMIYA,Shashe-,Shashe- mene ,Shashe- mene,,38.608142,7.205388,
+48,OROMIYA,Diksise,,Diksise,,39.55824,8.059179,
+49,OROMIYA,Asella,,Asella,Asela,39.12972322,7.949589951,
+50,OROMIYA,Asebe- Teferi ,,Asebe- Teferi ,Asbe Teferi,40.86319806,9.072493603,
+51,OROMIYA,Bedessa,,Bedessa,Bedesa,40.77378712,8.902011546,
+52,OROMIYA,Alemaya,Haromaya,Alemaya,Alem Maya,42.01641123,9.379383214,
+53,OROMIYA,Boreda,,Boreda,,41.278686,9.331067,
+54,OROMIYA,Adaba,,Adaba,Adaba,39.3890878,7.004454253,
+55,OROMIYA,Robe,,Robe,,39.631104,7.860619,
+56,OROMIYA,Hagere- Mariam ,,Hagere- Mariam ,Agere Mariyam,38.23373735,5.63380625,
+57,OROMIYA,Negele- Borena ,,Negele- Borena ,,39.577385,5.33699,
+58,SOMALIE,Shinile,,Shinile,,41.844013,9.686515,
+59,SOMALIE,Arere,,Arere,Erere,9.566667,41.383333,
+60,SOMALIE,Jigjiga,,Jigjiga,,42.792342,9.367259,
+61,SOMALIE,Hartshek,,Hartshek,,43.356499,9.161111,
+62,SOMALIE,Dolo,,Dolo,,42.059257,4.179211,
+63,SOMALIE,Moyale,,Moyale,,39.056,3.527,
+64,SOMALIE,Kebribeya,,,Kebri Beyah ,43.178233,9.098833,
+65,BENISHANGUL - GUMUZ,Mambook,Manbuk,Mambook ,Manbuk,36.216667,11.283333,
+66,BENISHANGUL - GUMUZ,Mender- Sebat,,Mender-  Sebat,Minder  7,,,
+67,BENISHANGUL - GUMUZ,Asossa,,Asossa  ,Asosa,34.53730603,10.05784932,
+68,BENISHANGUL - GUMUZ,Bambasi,,Bambasi ,Bambesi,34.73046863,9.751504664,
+69,BENISHANGUL - GUMUZ,Kemashi,,Kemashi  ,Kamashi,35.85916991,9.515450626,
+70,BENISHANGUL - GUMUZ,Agelo- meti ,,Agelo- meti,Agalometi,35.77048443,9.640776618,
+71,BENISHANGUL - GUMUZ,AVERA,,,,,,
+72,SNNP,Welikite,,Welikite,Welkite,37.77266735,8.27732366,
+73,SNNP,Butajira,,Butajira,Butajira,38.42140499,8.173264069,
+74,SNNP,Hosahna,,Hosahna,Hosaina,37.84747123,7.538579317,
+75,SNNP,Shone,,Shone,Shone,37.94869425,7.134857075,
+76,SNNP,Doyugena,,Doyugena,Doya Gena,37.78333,7.33333,
+77,SNNP,Alaba,,Alaba,Halaba,38.086143,7.311546,
+78,SNNP,Awasa,,Awasa,Hawassa,38.474819,7.058624,
+79,SNNP,Hagere- Selam ,,Hagere- Selam ,Hagere Selam,38.51921184,6.513880636,
+80,SNNP,Dilla,,Dilla,Dila,38.30745962,6.410516676,
+81,SNNP,Yirega-¦ chefie ,,Yirega-chefie ,Yirga Chefe,38.1988827,6.16095383,
+82,SNNP,Welayita sodo ,Welayita,Welayita sodo ,Welayita,37.766643,6.86176,
+83,SNNP,Bodite,,Bodite,Boditi,37.89064905,7.038034865,
+84,SNNP,Jinka,,Jinka,Jinka,36.56441614,5.78310286,
+85,SNNP,Dimeka,,Dimeka,Dimeka,36.45041198,4.892522922,
+86,SNNP,Masha,,Masha,Masha,35.47956686,7.741652627,
+87,SNNP,Tepi,,Tepi,Tepi,35.36770327,7.320015599,
+88,SNNP,Boniga,,Boniga,Bonga,36.24008346,7.388535704,
+89,SNNP,Chana,,Chana,Hana,36.11775846,6.226550231,
+90,SNNP,Arbam- minch ,,Arbam- minch ,Arba Minch,37.5527474,6.024547891,
+91,SNNP,Sawla,,Sawla,Sawla,36.87437474,6.300226567,
+92,SNNP,Shewa- Bench ,,Shewa- Bench ,,,,
+93,SNNP,Mizan- Teferi ,,Mizan- Teferi ,Mizan Teferi,35.41120174,6.883477024,
+94,SNNP,Deri,,Deri,Deri,36.28577951,7.384839762,
+95,SNNP,Amaro Kele ,,Amaro Kele ,,38.03333333,6.083333333,
+96,SNNP,Soyama,,Soyama,,37.88333333,5.7,
+97,SNNP,Karate,,Karate,,37.48333333,5.25,
+98,SNNP,Gidola,,Gidola,Gidole,37.34772952,5.647078098,
+99,SNNP,Tercha,,Tercha,,37.175334,7.146295,
+100,SNNP,Besite- chere ,,Besite- chere ,,,,
+101,SNNP,Lasoka,,Lasoka,Laska,36.60777815,6.30774507,
+102,SNNP,Amaya,,Amaya,Ameya,36.68000727,7.105541206,
+103,ADDIS ABABA,Addis Ababa,,Addis Ababa,,38.793806,9.023748,
+104,GAMBELLA,Gambella,,Gambella,Gambela,34.58547076,8.249396585,
+105,GAMBELLA,Shebo- kire ,,Shebo- kire ,,,,
+106,GAMBELLA,Meti,,Meti,,35.31666667,7.233333333,
+107,HARARI,Harari Town,,Harari Town,,42.132193,9.309582,
+108,DIREDAWA,Dire Dawa ,,Dire Dawa ,Dire Dawa,41.8572763,9.593652332,
+109,DIREDAWA,Melka- Jebdu ,,Melka- Jebdu ,Melka Jeldu,41.77420401,9.617496554,
