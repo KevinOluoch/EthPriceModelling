@@ -3,6 +3,7 @@
 library(stringi)
 library(stringdist)
 library(raster)
+library(sf)
 
 eth.markets <- read.csv("data/ETH_Region_Market_LongLati.csv", as.is = TRUE) 
 eth.markets <- eth.markets[, !(names(eth.markets) %in% c("Longitude","Latitude"))]
@@ -10,18 +11,61 @@ eth.markets2 <- read.csv("data/ETH_Region_Market_LongLati2.csv", as.is = TRUE)
 eth.markets2 <- eth.markets2[, !(names(eth.markets2) %in% c("Longitude","Latitude"))]
 # eth.markets2 <- coordinates(eth.markets2)[,1]
 
-eth3 <- raster::getData("GADM", country = "ETH", level = 3 )
-eth.major.town <- shapefile("data/shp/eth_major_town.shp")
-eth.pplp.2016 <- shapefile("data/shp/eth_pplp_multiplesources_20160205.shp")
+eth.major.town <- st_read("data/shp/eth_major_town.shp")
+eth.major.town$Longitute <- eth.major.town$LON
+eth.major.town$Latitude <- eth.major.town$LAT
 
-ethpoints <- shapefile("data/shp/eth_point.shp")
-ethpoints@data$Longitute <- coordinates(ethpoints)[,1]
-ethpoints@data$Latitude <- coordinates(ethpoints)[,2]
-eth.over <- data.frame(xx=over(eth3, ethpoints)) 
-eth3b <- eth3
-eth3b@data <- data.frame(eth3@data, eth.over)
-write.csv( eth_tmp@data,
-           "output/draft3.csv")
+eth.pplp.2016 <- st_read("data/shp/eth_pplp_multiplesources_20160205.shp")
+eth.pplp.2016$Longitute <- st_coordinates(eth.pplp.2016)[,1]
+eth.pplp.2016$Latitude <- st_coordinates(eth.pplp.2016)[,2]
+
+ethpoints <- st_read("data/shp/eth_point.shp")
+ethpoints$Longitute <- st_coordinates(ethpoints)[,1]
+ethpoints$Latitude <- st_coordinates(ethpoints)[,2]
+
+eth3 <-st_as_sf( raster::getData("GADM", country = "ETH", level = 3 ))
+eth3$Longitute <- eth3$Latitude <- rep(NA, dim(eth3)[1])
+eth.intersect <- st_intersects(eth3, ethpoints) #eth.over <- data.frame(xx=over(eth3, ethpoints)) 
+
+# Add a column of Latitude and longitude of town in admin level 3
+for (i in 1:dim(eth3)[1]){
+  # Add if 1 match
+  if  (length(eth.intersect[[i]]) == 1){
+    eth3$Longitute[i] <- ethpoints[eth.intersect[[i]], ]$Longitute
+    eth3$Latitude[i] <- ethpoints[eth.intersect[[i]], ]$Latitude
+  } 
+  
+  # Select if multiple matches
+  if  (length(eth.intersect[[i]]) > 1){
+    
+    multi.possible <- ethpoints[eth.intersect[[i]], ]
+    # Get unique types and arrange by priority
+    types_ <- unique(multi.possible$type)
+    types.sorted <- types_[order(match(types_,
+                       c("town", "city", "village", "suburb", "locality", 
+                         "airport", "national_park", "mountain_range", "state", 
+                          "historical_state","country")))]
+    
+    # select first based on priority
+      for (j in 1:dim(multi.possible)[1]){
+        #print(types.sorted[1])
+        #print(multi.possible[j,]) 
+        if (multi.possible$type[j] == types.sorted[1]){
+          eth3$Longitute[i] <- multi.possible$Longitute[j]
+          eth3$Latitude[i] <- multi.possible$Latitude[j]
+          break
+        }
+          
+      }
+      
+  }
+}
+
+
+#eth3b <- eth3$
+#eth3b@data <- data.frame(eth3@data, eth.over) #data.frame(st_intersects(eth3, ethpoints) )
+# write.csv( eth_tmp@data,
+#            "output/draft3.csv")
 
 
 add.closestmatch <- function(origdata, mrktvector, rgnvector, longlatishp, col.id) {
@@ -52,8 +96,12 @@ add.closestmatch <- function(origdata, mrktvector, rgnvector, longlatishp, col.i
       
       origdata[i, paste0('Region', col.id)] <- paste(unique(rgnvector[bestmatches]), collapse=" ") 
       origdata[i, paste0('Market', col.id)] <- paste(unique(mrktvector[bestmatches]), collapse=" ") 
-      origdata[i, paste0('Longitude', col.id)] <- coordinates(longlatishp[bestmatches[1], ])[,1]
-      origdata[i, paste0('Latitude',  col.id)] <- coordinates(longlatishp[bestmatches[1], ])[,2]
+      print(longlatishp)
+      print(longlatishp[bestmatches[1], ])
+      print(st_coordinates(longlatishp[bestmatches[1], ])[,1])
+      print(bestmatches[1])
+      origdata[i, paste0('Longitude', col.id)] <- longlatishp[bestmatches[1], ]$Longitute
+      origdata[i, paste0('Latitude',  col.id)] <- longlatishp[bestmatches[1], ]$Latitude
       }
   }
   

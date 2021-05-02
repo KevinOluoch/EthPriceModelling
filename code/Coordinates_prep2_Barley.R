@@ -36,12 +36,14 @@ f <- function(maize.data.row, mnth.year, mrkts.coords, no.of.prdct.types) {
     matchdist1 <- stringdist(tolower(mrkt), tolower(mrkts.coords[,market.names]))
     mrkt.row.nos <-  which(matchdist1  %in% min(matchdist1))
     if (min(matchdist1) == 0) {
+      print("                         ")
       print("AAAAAAAAAAAAAAAAAAAAAAAAA")
       print(mnth.year)
       print(rgion)
       print(mrkt)
       print(market.names)
       print("BBBBBBBBBBBBBBBBBBBBBBBBB")
+      print("                         ")
       
       break()
     }
@@ -195,7 +197,7 @@ for (price.csv.path in price.csvS.path) {
     
   }
  
-  
+  maize.info.all.output <- maize.info.all[2:4,]
   ##### Feedback ####
   print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
   
@@ -208,7 +210,7 @@ for (price.csv.path in price.csvS.path) {
   
   #### Save Data ###
   output.csv <- paste0(basename(dirname(price.csv.path)), "_", search.term, ".csv")
-  write.csv( maize.info.all, file.path(output.dir.path, output.csv))
+  write.csv( maize.info.all.output, file.path(output.dir.path, output.csv))
   
   # if (i == 12)break()
   # i = i +1 
